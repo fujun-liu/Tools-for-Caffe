@@ -140,7 +140,7 @@ if __name__ == '__main__':
 	files = glob.glob(searchbase)
 	shuffle(files)
 	hd = img2lmdb('/home/zizhaozhang/caffe/github/caffe/FCN/')
-	#hd.write(files[:4000],imgpath=imgpath)
+	#hd.write(files[:4000],imgpath=imgpath, name='fcn-train-lmdb', sufix='.jpg')
 	#hd.write(files[:4000],name='../fcn-train-label-lmdb',sufix='.png')
 	#hd.write(files[4000:],name='../fcn-test-lmdb',imgpath=imgpath)
 	#hd.write(files[4000:],name='../fcn-test-label-lmdb',sufix='.png')
